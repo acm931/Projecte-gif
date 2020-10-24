@@ -4,33 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacte</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Contacto</h1>
-        <a href="index.html">atrás</a>
+        <h1>Contacte</h1>
     </header>
     <main>
         <section>
-            <h2>--------------Formulario---------------</h2>
-            <p><b>!--------------Formulario---------------</b></p>
-            <br><br>
-            <p>Campos obligatorios</p>
-            <ul>
-                <li>email</li>
-                <li>telefono</li>
-                <li>nombre</li>
-            </ul>
+            <div id="after_submit"></div>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+              <div class="row">
+                <label class="required" for="name">El teu nom:</label><br />
+                <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                <span id="name_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required" for="email">Correu:</label><br />
+                <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                <span id="email_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required" for="message">Escriu el teu missatge:</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <span id="message_validation" class="error_message"></span>
+              </div>
+                
+                <input id="submit_button" type="submit" value="Envia" />
+            </form>      
+        <br>
 
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+
+
+        <a href="index.html" color: white><img src="img/botoinici.png" alt="Los Tejos" width="35" height="30"/></a>
 
             
 
@@ -38,6 +46,7 @@
 
 
     </main>
+<footer> Arnau 2020 </footer>
 </body>
 
 </html>
