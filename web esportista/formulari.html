@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="grid-container">
+            <div class="item1">
+                <nav class="menu">
+                    <header>
+                        <div class="contenedor">
+                            <div class="logo">
+                                <img src="img/logo.jpg" alt="" width="120"height="120" >
+                            </div>
+                            <nav class="menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">Sobre ell</a></li>
+                                    <li><a href="media.html">Media</a></li>
+                                    <li><a href="formulari.html">Contacte</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                    </ul>
+                </nav>
+            </div>
+            <div class="item3">
+                <section>
+                    <div id="after_submit"></div>
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <label class="required" for="name">El teu nom:</label><br />
+                            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                            <span id="name_validation" class="error_message"></span>
+                        </div>
+                        <div class="row">
+                            <label class="required" for="email">Correu:</label><br />
+                            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                            <span id="email_validation" class="error_message"></span>
+                        </div>
+                        <div class="row">
+                            <label class="required" for="message">Escriu el teu missatge:</label><br />
+                            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                            <span id="message_validation" class="error_message"></span>
+                        </div>
+
+                        <input id="submit_button" type="submit" value="Envia" />
+                    </form>
+                    <br>
+
+
+
+
+
+
+
+                </section>
+
+
+            </div>
+            <div class="item4"><img src="img/imatge1.jpg" alt="" height="350" width="450"></div>
+        </div>
+    </main>
+    <footer> Arnau 2020 </footer>
+</body>
+
+</html>
